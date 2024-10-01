@@ -19,14 +19,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i, 
-        use: ['style-loader', 'css-loader'], 
+        test: /\.css$/i, // Para archivos CSS
+        use: ['style-loader', 'css-loader'], // Usar style-loader y css-loader
       },
       {
-        test: /\.js$/, 
-        exclude: /node_modules/, 
+        test: /\.svg$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i, // Para imágenes
+        type: 'asset/resource', // Usar el recurso para manejar las imágenes
+      },
+      {
+        test: /\.js$/, // Para archivos JavaScript
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', 
+          loader: 'babel-loader', // Usar babel-loader para transpilar JavaScript
         },
       },
     ],

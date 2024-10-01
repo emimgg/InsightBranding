@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +9,12 @@
 :root {
     --main-blue: #00264c;
     --main-yellow: #ffb800;
-    font-family: 'Helvetica';
+    --main-bg: #f7f7f7;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: var(--main-bg);
 }
 
 li {
@@ -15,11 +22,12 @@ li {
 }
 
 header {
-    outline: 1px solid coral;
+    outline: 0.2px solid var(--main-blue);
     background-color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 8px;
     width: 100%;
     position: fixed;
     height: 70px;
@@ -28,16 +36,39 @@ header {
     z-index: 100;
 }
 
-#logo {
-    max-width: 100px;
-    height: 50px;
-    margin: auto;
+.logo-wrapper {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
+
+.logo-wrapper h1 {
+    width: 50px;
+    font-size: 0.5rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+#logo {
+    max-height: 25px;
+    max-width: 100%;
+    object-fit: contain; /* Ensures the image fits within the wrapper without distortion */
+}
+
 
 ul {
     display: flex;
-    gap: 2px;
+    gap: 8px;
     justify-content: center;
+}
+
+.navbar .nav-item button {
+    background-color: transparent;
+    font-size: 0.8rem;
+
 }
 
 .title {
@@ -80,16 +111,27 @@ button:focus {
 }
 
 .cta {
-    background-color: var(--main-yellow); /* Bright color for visibility */
-    color: white; /* Text color */
-    padding: 10px 15px; /* Padding for better touch targets */
-    border: none; /* No border */
-    border-radius: 10px; /* Slightly rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-align: center; /* Center the text */
-    width: 100%; /* Full width on mobile */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    background-color: var(--main-yellow); 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    text-align: center; 
+    width: 100%; 
+    transition: background-color 0.3s ease; 
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.whatsapp-icon {
+    margin-left: 5px; 
+    width: 20px; 
+    height: 20px; 
 }
 
 p {
@@ -105,13 +147,13 @@ p {
 .company-goal {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     padding: 20px;
 }
 
 .company-goal div {
     text-align: left; 
-    border-bottom: 1px solid var(--main-blue);
+    border-top: 1px solid var(--main-blue);
+    padding: 14px 0;
 }
 
 .company-goal div:nth-child(2) {
@@ -120,6 +162,15 @@ p {
 
 .company-goal div:nth-child(2) p {
     margin-left: auto;
+}
+
+.company-goal div:nth-child(3) {
+    border-bottom: 1px solid var(--main-blue);
+}
+
+
+.team {
+    padding: 20px;
 }
 
 .card {
@@ -131,15 +182,16 @@ p {
     margin: 16px; 
     overflow: hidden; 
     max-width: 350px; 
+    height: 140px;
     padding: 12px;
 }
 
 .avatar-wrapper {
-    width: 72px;
-    height: 72px;
+    width: 94px;
+    height: 94px;
     border-radius: 50%;
     outline: 1px solid var(--main-yellow);
-    margin: 0 auto; 
+    margin: auto; 
     overflow: hidden; 
     position: relative; 
     display: flex; 
@@ -154,16 +206,21 @@ p {
     position: absolute; 
 }
 
+.member-info {
+    margin: auto 0;
+}
+
 .member-bio {
     display: flex;
     flex-direction: column;
-    font-size: 10px;
+    font-size: 8px;
     gap: 3px;
 }
 
 .name {
     font-size: 1rem;
     margin-bottom: 6px;
+    color: var(--main-blue);
 }
 
 .feedback {
@@ -175,12 +232,6 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.feedback h1 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-}
 
 .feedback label {
     display: block;
@@ -250,12 +301,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 2px;
-    font-size: 0.9em;
   }
   
   footer p {
-    margin: 2px auto;
-    color: #fff;
+    padding: 0.2px;
+    color: #a5a4a4;
+    font-size: 0.6em;
+    margin: 0 auto;
+
   }
   
   footer .university-info {
