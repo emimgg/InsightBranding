@@ -21,8 +21,8 @@
         </nav>
     </header>
     <section class="hero">
-        <h1 class="hero-title title">Estrategias publicitarias <span class="highlighted">Innovadoras y Exitosas</span></h1>
-        <p class="hero-subtitle">Transforma tu marca con el poder de la Psicología del consumidor.</p>
+        <h1 class="hero-title title">Estrategias publicitarias <span class="highlighted">innovadoras y exitosas</span></h1>
+        <p class="hero-subtitle">Transformá tu marca con el poder de la Psicología del consumidor.</p>
         <button class="cta" onclick="window.open('https://api.whatsapp.com/send/?phone=595992921330&text&type=phone_number&app_absent=0', '_blank');">
             Contactanos ya
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" fill="white">
@@ -81,7 +81,28 @@
                 <option value="11">11° Semestre</option>
                 <option value="12">12° Semestre</option>
             </select>
-            <label for="opinion">Opinión:</label>
+            <label for="rating">¿Qué calificación nos pones?</label>
+            <div>
+                <input type="radio" id="malo" name="rating" value="Malo">
+                <label for="malo">Malo</label>
+            </div>
+            <div>
+                <input type="radio" id="aceptable" name="rating" value="Aceptable">
+                <label for="aceptable">Aceptable</label>
+            </div>
+            <div>
+                <input type="radio" id="bueno" name="rating" value="Bueno">
+                <label for="bueno">Bueno</label>
+            </div>
+            <div>
+                <input type="radio" id="muy-bueno" name="rating" value="Muy bueno">
+                <label for="muy-bueno">Muy bueno</label>
+            </div>
+            <div>
+                <input type="radio" id="excelente" name="rating" value="Excelente">
+                <label for="excelente">Excelente</label>
+            </div>
+            <label for="opinion">Comentario:</label>
             <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea>
             <button type="submit">Enviar</button>
         </form>

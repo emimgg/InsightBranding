@@ -8,6 +8,7 @@
 
 :root {
     --main-blue: #00264c;
+    --secondary-blue: #012b558f;
     --main-yellow: #ffb800;
     --main-bg: #f7f7f7;
     font-family: 'Montserrat';
@@ -152,7 +153,7 @@ p {
 
 .company-goal div {
     text-align: left; 
-    border-top: 1px solid var(--main-blue);
+    border-top: 1px solid var(--secondary-blue);
     padding: 14px 0;
 }
 
@@ -165,7 +166,7 @@ p {
 }
 
 .company-goal div:nth-child(3) {
-    border-bottom: 1px solid var(--main-blue);
+    border-bottom: 1px solid var(--secondary-blue);
 }
 
 
@@ -232,6 +233,9 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.feedback h1 {
+    margin-bottom: 16px;
+}
 
 .feedback label {
     display: block;
@@ -240,7 +244,8 @@ p {
     color: #333;
 }
 
-.feedback input,
+.feedback input[type='text'],
+.feedback input[type='email'],
 .feedback select,
 .feedback textarea {
     width: 100%;
@@ -251,6 +256,13 @@ p {
     font-size: 1rem;
     background-color: #fff;
     box-sizing: border-box;
+}
+
+.feedback div {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    margin: 12px 0;
 }
 
 .feedback textarea {
