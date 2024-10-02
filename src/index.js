@@ -8,3 +8,26 @@ document.addEventListener('DOMContentLoaded', () => {
     imgElement.src = logo;
   
   });
+
+
+  let currentIndex = 0;
+
+  function changeReview(direction) {
+      const reviews = document.querySelectorAll('.review-wrapper');
+      const totalReviews = reviews.length;
+  
+      currentIndex += direction;
+  
+      if (currentIndex < 0) {
+          currentIndex = totalReviews - 1; 
+      } else if (currentIndex >= totalReviews) {
+          currentIndex = 0; 
+      }
+  
+      const translateX = -currentIndex * 100; 
+  
+      const carousel = document.querySelector('.carousel');
+      carousel.style.transform = `translateX(${translateX}%)`;
+  }
+  
+  setInterval(() => changeReview(1), 5000);

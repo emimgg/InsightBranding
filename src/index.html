@@ -31,12 +31,46 @@
         </button>    
     </section>
     <section class="ratings-container">
-        <img src="#" alt="customer">
-        <div class="review-wrapper">
-            <blockquote>
-                "Mi empresa vio un aumento del 200% en ventas gracias a Insight Branding"
-            </blockquote>
+        <div class="carousel">
+            <div class="review-wrapper active">
+                <div class="top-card">
+                    <div class="avatar-wrapper"><img src="https://images.pexels.com/photos/14596539/pexels-photo-14596539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="customer 1"></div>
+                    <div class="customer-info">
+                        <h3 class="title">Susana Alvarez</h3>
+                        <h6 class="subtitle">CEO de WeBank</h6>
+                    </div>
+                </div>
+                <blockquote>
+                    "Mi empresa vio un aumento del 200% en ventas gracias a Insight Branding"
+                </blockquote>
+            </div>
+            <div class="review-wrapper">
+                <div class="top-card">
+                    <div class="avatar-wrapper"><img src="https://images.pexels.com/photos/7654432/pexels-photo-7654432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="customer 2"></div>
+                    <div class="customer-info">
+                        <h3 class="title">Joachim Svelte</h3>
+                        <h6 class="subtitle">CEO de Berlink</h6>
+                    </div>
+                </div>
+                <blockquote>
+                    "El servicio fue excepcional y el equipo muy profesional."
+                </blockquote>
+            </div>
+            <div class="review-wrapper">
+                <div class="top-card">
+                    <div class="avatar-wrapper"><img src="https://images.pexels.com/photos/8171196/pexels-photo-8171196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="customer 3"></div>
+                    <div class="customer-info">
+                        <h3 class="title">Lidya Young</h3>
+                        <h6 class="subtitle">CEO de Skillbase</h6>
+                    </div>
+                </div>
+                <blockquote>
+                    "Recomiendo Insight Branding a cualquier empresa que quiera crecer."
+                </blockquote>
+            </div>
         </div>
+        <button class="prev" onclick="changeReview(-1)">&#10094;</button>
+        <button class="next" onclick="changeReview(1)">&#10095;</button>
     </section>
     <section class="company-goal">
         <div>

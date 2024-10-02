@@ -23,7 +23,7 @@ li {
 }
 
 header {
-    outline: 0.2px solid var(--main-blue);
+    border-bottom: 0.2px solid var(--main-blue);
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -42,6 +42,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
+    flex-shrink: 1;
 }
 
 .logo-wrapper h1 {
@@ -217,8 +218,8 @@ p {
 }
 
 .avatar-wrapper {
-    width: 94px;
-    height: 94px;
+    width: 82px;
+    height: 82px;
     border-radius: 50%;
     outline: 1px solid var(--main-yellow);
     margin: auto; 
@@ -227,6 +228,7 @@ p {
     display: flex; 
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .avatar {
@@ -234,6 +236,7 @@ p {
     height: 140%; 
     object-fit: cover; 
     position: absolute; 
+    bottom: -20px;
 }
 
 .member-info {
@@ -355,3 +358,70 @@ footer {
   footer .university-info {
     font-weight: bold;
   }
+
+
+  /*REVIEWS CAROUSEL*/
+
+  .ratings-container {
+    position: relative;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Enable smooth sliding */
+    width: 100%; /* Keep all reviews in the same line */
+}
+
+.review-wrapper {
+    min-width: 100%; /* Ensure each review takes full width */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.review-wrapper img {
+    min-width: 100px; /* Adjust as needed */
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 0;
+    object-fit: cover;
+    position: absolute;
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%) scale(0.9); /* Scale down by 20% */
+}
+
+button.carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.top-card {
+    display: flex;
+    align-items: center;
+}
+
+.customer-info {
+    flex-grow: 1;
+}
+
+blockquote {
+    padding: 18px 0 0 0;
+}
