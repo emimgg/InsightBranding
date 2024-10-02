@@ -276,7 +276,8 @@ p {
     color: #333;
 }
 
-.feedback input[type='text'],
+.feedback #name,
+.feedback #surname,
 .feedback input[type='email'],
 .feedback select,
 .feedback textarea {
