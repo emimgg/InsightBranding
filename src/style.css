@@ -10,6 +10,7 @@
     --main-blue: #00264c;
     --secondary-blue: #012b558f;
     --main-yellow: #ffb800;
+    --secondary-yellow: #ffb700a2;
     --main-bg: #f7f7f7;
     font-family: 'Montserrat';
 }
@@ -82,19 +83,19 @@ ul {
 }
 
 .hero {
-    padding: 80px 12px;
+    padding: 80px 40px;
     margin-top: 70px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    height: 60dvh;
 }
 
-
-
 .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 button {
@@ -141,7 +142,7 @@ p {
     margin: 0;
     padding: 0.5em 0;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #333;
     overflow-wrap: break-word;
 }
@@ -183,15 +184,17 @@ p {
 
 .company-goal div {
     text-align: left; 
-    border-top: 1px solid var(--secondary-blue);
+    border-bottom: 1px solid var(--secondary-blue);
     padding: 14px 0;
 }
 
-.company-goal div:nth-child(2) {
+.company-goal div:nth-child(2),
+.company-goal div:nth-child(4) {
     text-align: right;
 }
 
-.company-goal div:nth-child(2) p {
+.company-goal div:nth-child(2) p,
+.company-goal div:nth-child(4) p {
     margin-left: auto;
 }
 
@@ -201,7 +204,8 @@ p {
 
 
 .team {
-    padding: 20px;
+    padding: 70px 20px 40px 20px;
+    margin: 12px 0;
 }
 
 .card {
@@ -263,6 +267,9 @@ p {
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: height 500ms ease, background-color 500ms ease;
+    height: min-content;
+    margin-bottom: 10px;
 }
 
 .feedback h1 {
@@ -271,7 +278,7 @@ p {
 
 .feedback label {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 5px;
     color: #333;
 }
@@ -286,7 +293,7 @@ p {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: #fff;
     box-sizing: border-box;
 }
@@ -368,6 +375,7 @@ footer {
     max-width: 600px; /* Adjust the width as needed */
     margin: auto;
     overflow: hidden;
+    padding: 12px 20px;
 }
 
 .carousel {
@@ -378,7 +386,7 @@ footer {
 
 .review-wrapper {
     min-width: 100%; /* Ensure each review takes full width */
-    padding: 20px;
+    padding: 4px 20px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -400,18 +408,27 @@ button.carousel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--secondary-yellow);
     border: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    z-index: 100;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%; 
+    color: #a3a3a3;
 }
 
-.prev {
-    left: 10px;
+button.prev {
+    left: 5px; 
 }
 
-.next {
-    right: 10px;
+button.next {
+    right: 5px; 
 }
 
 .top-card {
@@ -425,4 +442,40 @@ button.carousel {
 
 blockquote {
     padding: 18px 0 0 0;
+}
+
+input.invalid {
+    outline: 1px solid red;
+}
+
+input.valid {
+    outline: 1px solid green;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-msg {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.success {
+    height: 100px;
+    width: 85%;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success h1 {
+    color: #006622;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.blue-text {
+    color: var(--main-blue);
 }

@@ -11,7 +11,7 @@ const cardsData = [
             'Psicóloga Clínica, Universidad Columbia (2014)',
             'Maestría en Psicología del Consumidor, Universidad de Palermo',
             'Certificación en Investigación de Mercado y Psicología del Consumidor',
-            'Licenciada en Marketing, Universidad Americana (2010)',
+            'Licenciada en Marketing, Univ. Americana (2010)',
         ],
         image: lourdes,
     },
@@ -78,3 +78,16 @@ cardsData.forEach(card => {
     cardElement.appendChild(memberInfo);
     cardContainer.appendChild(cardElement);
 });
+
+
+export const formSuccess = () => {
+    const feedbackSection = document.querySelector(".feedback");
+
+    feedbackSection.innerHTML = "";
+    feedbackSection.classList.add("success");
+
+    const successText = document.createElement("h1");
+    successText.textContent = "Gracias!";
+
+    feedbackSection.appendChild(successText);
+}
