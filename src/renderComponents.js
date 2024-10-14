@@ -4,6 +4,7 @@ import rocio from './assets/8.png';
 import alheli from './assets/9.png';
 
 
+
 const cardsData = [
     {
         name: 'Mgtr. Lourdes Arévalos',

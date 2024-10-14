@@ -4,11 +4,21 @@ import whaIcon from './assets/icons8-whatsapp.svg';
 import './renderComponents.js';
 import './forms.js';
 import './sendEmail.js';
+import iso1 from './assets/isoCertIcon1.png';
+import iso2 from './assets/isoCertIcon2.png';
+import teamIcon from './assets/teamIcon.png';
 
 document.addEventListener('DOMContentLoaded', () => {
     const imgElement = document.querySelector('#logo');
     imgElement.src = logo;
-  
+    
+    const isoImg1 = document.querySelector('#iso1');
+
+    isoImg1.src = iso1;
+
+    const teamIconElem = document.querySelector('#teamIconImg');
+
+    teamIconElem.src = teamIcon;
   });
 
 
