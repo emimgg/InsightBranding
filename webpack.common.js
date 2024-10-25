@@ -9,6 +9,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Production',
       template: './src/index.html', 
+      favicon: './src/assets/favicon-32x32.png',
     }),
   ],
   output: {

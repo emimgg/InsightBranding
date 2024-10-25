@@ -9,42 +9,42 @@ const cardsData = [
     {
         name: 'Mgtr. Lourdes Arévalos',
         bio: [
-            'Psicóloga Clínica, Universidad Columbia (2014)',
-            'Maestría en Psicología del Consumidor, Universidad de Palermo',
-            'Certificación en Investigación de Mercado y Psicología del Consumidor',
-            'Licenciada en Marketing, Univ. Americana (2010)',
+            'PSICÓLOGA Clínica, Universidad Columbia, Asunción (2014) ',
+            'Especialización en Psicología del Consumidor, Universidad de Palermo, Buenos Aires (2015)',
+            'Especialización en Psicología Social, Universidad de Palermo, Buenos Aires (2015)',
+            'Licenciada en Marketing, Universidad Americana, Asunción (2010)',
         ],
         image: lourdes,
     },
     {
         name: 'Mgtr. Milagros Maqueda',
         bio: [
-            'Psicóloga Clínica, Universidad Columbia (2016)',
-            'Maestría en Psicología del Consumidor, Universidad de Barcelona',
-            'Certificación en Psicología Aplicada a la Innovación de Productos'
+            'Psicóloga Clínica, Universidad Columbia, Asunción (2016)',
+            'Maestría en Psicología del Consumidor, Universidad Autónoma de Barcelona, Barcelona (2017)',
+            'Certificación en Psicología Aplicada a la Innovación de Productos, Universidad Autónoma de Madrid, Madrid (2018)'
         ],
         image: milagros,
     },
     {
         name: 'Mgtr. Rocío Morales',
         bio: [
-            'Psicóloga Clínica, Universidad Columbia (2015)',
-            'Maestría en Psicología del marketing, Universidad de Buenos Aires',
-            'Certificación en Investigación de Mercado y Psicología del Consumidor'
+            'Licenciatura en Psicología Clínica - Universidad Columbia, Asunción (2015)',
+            'Maestría en Psicología del Marketing - Universidad de Palermo, Buenos Aires (2016)',
+            'Especialización en Psicología del Color - Universidad de Alcalá, Barcelona (2017)'
         ],
         image: rocio,
     },
     {
         name: 'Mgtr. Alheli Saifildin',
-        bio: ['Psicóloga Clínica, Universidad Columbia (2015)',
-            'Maestría en Psicología del Consumidor, Universidad de Palermo',
-            'Certificación en Psicología del Consumidor y Estrategias de Marketing'
+        bio: ['Psicóloga Clínica, Universidad Columbia, Asuncion (2015)',
+            'Maestría en Psicología del Marketing, Universidad Palermo, Buenos Aires (2016',
+            'Certificación en Psicología del Consumidor y Estrategias de Marketing, Universidad Palermo, Buenos Aires (2016)'
         ],
         image: alheli,
     },
 ];
 
-const cardContainer = document.querySelector('.team');
+const cardContainer = document.querySelector('.cards-wrapper');
 cardsData.forEach(card => {
     const cardElement = document.createElement('article');
     cardElement.classList.add('card');
@@ -92,3 +92,6 @@ export const formSuccess = () => {
 
     feedbackSection.appendChild(successText);
 }
+
+
+
