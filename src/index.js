@@ -13,7 +13,7 @@ import ads from './assets/ads.png';
 import consultory from './assets/consultory.png';
 import consumer from './assets/consumer.png';
 import product from './assets/product.png';
-import starsImg from './assets/5star.png';
+import starsImg from './assets/stars2.png';
 
 document.addEventListener('DOMContentLoaded', () => {
     const imgElement = document.querySelector('#logo');
