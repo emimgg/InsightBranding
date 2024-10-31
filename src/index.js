@@ -13,7 +13,10 @@ import ads from './assets/ads.png';
 import consultory from './assets/consultory.png';
 import consumer from './assets/consumer.png';
 import product from './assets/product.png';
-import starsImg from './assets/stars2.png';
+import starsImg from './assets/stars3.png';
+import cstmer1 from './assets/customer1.png';
+import cstmer2 from './assets/customer2.png';
+import cstmer3 from './assets/customer3.png';
 
 document.addEventListener('DOMContentLoaded', () => {
     const imgElement = document.querySelector('#logo');
@@ -28,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const productsEle = document.querySelector('#products');
     const consultoryEle = document.querySelector('#consultory');
     const starsContainers = document.querySelectorAll(".stars");
+    const customer1 = document.querySelector('#customer-1');
+    const customer2 = document.querySelector('#customer-2');
+    const customer3 = document.querySelector('#customer-3');
 
     isoImg1.src = iso1;
     isoImg2.src = iso2;
@@ -37,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     productsEle.src = product;
     adsEle.src = ads;
     consultoryEle.src = consultory;
+
+    customer1.src = cstmer1;
+    customer2.src = cstmer2;
+    customer3.src = cstmer3;
 
     starsContainers.forEach(star => {
         star.src = starsImg;
@@ -53,5 +63,5 @@ document.getElementById('scrollToTeam').addEventListener('click', function() {
 });
 
 document.getElementById('scrollToHero').addEventListener('click', function() {
-    document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.hero-section').scrollIntoView({ behavior: 'smooth' });
 });
