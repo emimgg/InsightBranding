@@ -461,6 +461,7 @@ div.wrapper1 {
     font-size: 1rem;
     color: var(--main-blue);
     font-weight: 700;
+    text-wrap: nowrap;
 }
 
 .role {
@@ -909,6 +910,9 @@ input.valid {
 
 }
 
+.services > h1 {
+    margin-bottom: 25px;
+}
 
 
 
