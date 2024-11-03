@@ -1,15 +1,13 @@
-import {formSuccess} from './renderComponents.js'
 
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
+import { formSuccess } from './renderComponents.js';
+
+document.querySelector('form').addEventListener('validSubmit', function(event) {
     const name = document.getElementById("name").value;
     const surname = document.getElementById("surname").value;
     const email = document.querySelector("#email").value;
     const career = document.querySelector("#career").value;
     const semester = document.querySelector("#semester").value;
     const rating = document.querySelector('input[name="rating"]:checked').value;
-
 
     emailjs.send("service_ybjy8ih", "template_3ptksec", {
         from_name: `${name} ${surname}`,

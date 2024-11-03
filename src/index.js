@@ -17,6 +17,8 @@ import starsImg from './assets/stars3.png';
 import cstmer1 from './assets/customer1.png';
 import cstmer2 from './assets/customer2.png';
 import cstmer3 from './assets/customer3.png';
+import visionIcn from './assets/binoIcon.png';
+import goalIcon from './assets/rocketIcon.png';
 
 document.addEventListener('DOMContentLoaded', () => {
     const imgElement = document.querySelector('#logo');
@@ -35,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const customer2 = document.querySelector('#customer-2');
     const customer3 = document.querySelector('#customer-3');
     const teamIconElem = document.querySelector('#teamIconImg');
+    const visionIconElem = document.querySelector('#vision-icon');
+    const goalIconElem = document.querySelector('#goal-icon');
 
     // Assign sources and enable lazy loading
     isoImg1.src = iso1;
@@ -68,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     teamIconElem.src = teamIcon;
     teamIconElem.loading = "lazy";
+    visionIconElem.src = visionIcn;
+    visionIconElem.loading = 'lazy';
+    goalIconElem.src = goalIcon;
+    goalIconElem.loading = 'lazy';
 });
 
 document.getElementById('scrollToTeam').addEventListener('click', function() {
