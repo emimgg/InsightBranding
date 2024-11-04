@@ -20,7 +20,7 @@ const cardsData = [
     {
         name: 'Mgtr. Milagros Maqueda',
         bio: [
-            'Licenciatura en Psicología clínica, Universidad Columbia, Asunción (2016) ',
+            'Licenciatura en Psicología Clínica, Universidad Columbia, Asunción (2016) ',
             'Maestría en Psicología del Consumidor, Universidad Autónoma de Barcelona, Barcelona (2017)',
             'Certificación en Psicología Aplicada a la Innovación de Productos, Universidad Autónoma de Madrid, Madrid (2018)'
         ],
@@ -39,7 +39,7 @@ const cardsData = [
     },
     {
         name: 'Mgtr. Alheli Saifildin',
-        bio: ['Licenciatura en Psicología, Universidad Columbia, Asuncion (2015)',
+        bio: ['Licenciatura en Psicología Clínica, Universidad Columbia, Asuncion (2015)',
             'Maestría en Psicología del Marketing, Universidad de Palermo, Buenos Aires (2016)',
             'Certificación en Psicología del Consumidor y Estrategias de Marketing, Universidad Palermo, Buenos Aires (2016)'
         ],
